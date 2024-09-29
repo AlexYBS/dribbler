@@ -1,0 +1,442 @@
+
+/*FOR NAV-BAR header*/
+
+.logoText {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+}
+
+.navbar img {
+    height: 40px;
+
+}
+
+#offcanvasDarkNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A79277;
+}
+.navbar {
+    background-color: #A79277;
+}
+.button-nav {
+    background-color: #A79277;
+
+}
+.navbar-toggler:focus,.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+/*for first menu*/
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+/*for second navbar-menu*/
+.userText {
+    text-decoration: none;
+    color: white;
+}
+.second-menu {
+    text-decoration: none;
+    color: white;
+}
+.menu-user {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+   height: 40px;
+    justify-content: center;
+    z-index: 100;
+}
+
+/*content CSS*/
+
+h1 {
+    position: relative;
+    margin-bottom: 100px;
+    color: #A79277;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+/* Animația pentru h1 */
+
+.animation-h1{
+     transform: translateX(-100%);
+    animation: slideIn 1.5s ease forwards, moveText 20s linear 1.5s infinite;
+    overflow: hidden;
+}
+@keyframes slideIn {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveText {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+h2 {
+    color: white;
+    color: #A79277;
+    text-align: center;
+}
+
+a {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.dribbler {
+    color: black;
+
+}
+/*carousel*/
+.bg-img-1 {
+    background-image: url("/images/Spain.jpg");
+
+}
+
+.bg-img-2 {
+    background-image: url("/images/RealMadrid.jpg");
+}
+
+.bg-img-3 {
+    background-image: url("/images/Atalanta.jpeg");
+}
+
+.bg-img-4 {
+    background-image: url("/images/olympiacos.jpg");
+}
+
+.bg-img-5 {
+    background-image: url("/images/Giorgi-Mamardashvili-to-Liverpool.png");
+}
+
+.bg-img-6 {
+    background-image: url("/images/DaniOlmo.png");
+}
+
+.bg-img-7 {
+    background-image: url("/images/Kylian-Mbappe-Real-Madrid.jpg");
+}
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+}
+
+.content-2024 {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 60px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    align-self: center;
+}
+
+.news-transfer {
+    margin-top: 400px;
+}
+
+.card-title {
+    color: #A79277;
+    font-family: "Kanit", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.card-text {
+    color: black;
+    font-size: smaller;
+}
+
+.dribbler-news {
+    text-decoration: none;
+
+}
+
+.spain {
+    color: red;
+}
+
+.championsLeagueTitle {
+    color: blue;
+}
+
+.dortmund {
+    color: yellow;
+}
+
+.realMadrid {
+    color: white;
+}
+
+.atalanta {
+    color: #0B2F9F;
+}
+
+.leverkusen {
+    color: red;
+}
+
+.europaLeagueTitle {
+    color: #E85C0D;
+}
+
+.conferenceLeagueTitle {
+    color: #399918;
+}
+
+.olympiacos {
+    color: red;
+}
+
+.fiorentina {
+    color: #7A1CAC;
+}
+
+.dribbler-top {
+    color: #A79277;
+}
+
+.bronz {
+    color: #a97142;
+}
+
+.argint {
+    color: #BCC6CC;
+}
+
+.gold {
+    color: #D4AF37;
+}
+
+.dribblerFocus {
+    color: black;
+}
+/*for footer*/
+footer {
+    background-color: #A79277;
+}
+
+.social-media {
+    height: 30px;
+}
+
+.btn-dark{
+    font-family: "Playfair Display", serif;
+}
+/*ajustarea pentru tablete*/
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .logoText{
+        font-size: 25px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .navbar img{
+        height: 35px;
+    }
+
+         .league-logo {
+             display: none;
+         }
+
+        li > a{
+            margin-right: 5px;
+
+        }
+
+        #offcanvasDarkNavbar{
+            height: 25%;
+            width: 100%;
+        }
+
+        .second-menu{
+            font-size: 15px;
+        }
+
+        .menu-user{
+             display: grid;
+        grid-template-columns: repeat(3, 1fr);
+            /* 2 coloane egale */
+            grid-gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 0px;
+        }
+}
+
+/*Ajustarea pentru telafoane*/
+
+@media (max-width:768px) {
+    .logoText{
+        font-size: 20px;
+    }
+
+    .user{
+        height: 35px;
+    }
+
+    .navbar img{
+        height: 35px;
+        }
+
+    .menu-container{
+        gap: 5px;
+        }
+
+    .menu-user {
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        gap: 15px;
+        height: 20px;
+        justify-content: center;
+                }
+.second-menu{
+    font-size: 15px;
+}
+
+    h1 {
+    font-size: 30px;
+    padding-top: 70px;                            }
+
+     a{
+     font-size: 10px;
+                                } 
+    .carousel-item{
+      height: 300px;
+        }
+
+    .content-2024{
+        margin-top: 30px;
+    }
+    .title{
+        font-size: 20px;
+    }
+
+    .news-transfer {
+        margin-top: 200px;
+        }
+
+    .social-media {
+        height: 20px;
+                }
+
+    .logoText>img{
+        height: 28px;
+    }
+
+    .league-logo{
+        display: none;
+    }
+        #offcanvasDarkNavbar{
+            display: flex;
+            width: 45%;
+            height: 60%;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+    .card-title{
+        font-size: 12px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    br{
+        display: none;
+    }
+}
+
+/*javascript-class for phone*/
+.menu-user-for-phone {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*post created css */
+
+.postTitle{
+    color: black;
+}
+
+.authorName{
+    color: grey;
+    text-align: start !important;
+    font-size: 10px;
+}
+
+.postContent{
+    color: black;
+    font-weight: lighter;
+    font-style: italic;
+}

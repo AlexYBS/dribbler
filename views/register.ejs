@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<form class="form_container" action="/register" method="POST">
+    <div class="logo_container">
+        <img src="/images/icons8-football-64.png" alt="dribbler logo" height="70px">
+    </div>
+    <div class="title_container">
+        <h1 class="title">Create a Dribbler Account</h1>
+        <span class="subtitle">Your news, your way.</span>
+    </div>
+    <br>
+    <div class="input_container">
+        <label class="input_label" for="userName_field">Name</label>
+        <input  title="ex:AlexYBS14" name="nameUser" type="text" id="userName_field"class="input-name" placeholder=" Example:  AlexYBS14"required>
+    </div>
+    <div class="input_container">
+        <label class="input_label" for="email_field" >Email</label>
+        <img class="icon" src="/images/mail.png" alt="email input">
+        <input placeholder="name@mail.com" name="input-name" type="text" class="input_field"
+            id="email_field" required>
+    </div>
+    <div class="input_container">
+        <label class="input_label" for="password_field">Password</label>
+       <img class="icon" src="/images/locked-computer.png" alt="write your password">
+        <input placeholder="Password" title="min 8 char" name="input-name" type="password" class="input_field"
+            id="password_field" required>
+    </div>
+    <div class="input_container">
+        <label class="input_label" for="write_password_again_field">Repeat Password</label>
+        <img class="icon" src="/images/unlock.png" alt="write your password" >
+       <input placeholder="Repeat your password" title="Repeat your password" name="input-name" type="password" class="input_field"
+            id="write_password_again_field" required>
+    </div>
+    <button title="Sign In" type="submit" class="sign-in_btn">
+        <span>Create your account</span>
+    </button>
+
+    <div class="separator">
+        <hr class="line">
+        <span>Or</span>
+        <hr class="line">
+    </div>
+    <button title="Sign In" type="submit" class="sign-in_ggl sign-in">
+       <img src="/images/google.png" alt="google image" height="20px">
+        <span>Sign In with Google</span>
+    </button>
+
+    <button title="Sign in" type="submit" class="sign-in_fb sign-in">
+        
+            <img src="/images/icons8-facebook-50.png" alt="facebook sign in" height="25px">
+            <span class="sign-in-facebook">Sign in with Facebook</span>
+    </button>
+    <p>By creating an account you agree to our <a href="/terms-privacy" class="terms-privacy">Terms & Privacy.</a></p>
+</form>
+</body>
+
+</html>
+
